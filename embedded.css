@@ -1,0 +1,160 @@
+/* Reset global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+  font-family: sans-serif;
+  background: url(pic/bg4.jpg) center / cover fixed no-repeat;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Main wrapper */
+.main {
+  width: 100%;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  width: 95%;
+  display: flex;
+  margin: 20px auto;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5) url(pic/background.jpg) center / cover;
+  background-blend-mode: overlay;
+  min-height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.navbar .mcu {
+  width: 400px;
+  cursor: pointer;
+  filter: brightness(1.5);
+  transition: filter 0.3s ease-out;
+}
+.navbar .mcu:hover {
+  filter: brightness(1);
+}
+ul {
+  margin-top: -8%;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #14d1b2c7;
+  transition: color 0.3s ease-in-out;
+}
+ul li a:hover {
+  color: rgb(0, 255, 221);
+}
+
+/* Section look */
+div[id] {
+  min-height: 100vh;
+  padding: 4rem 4%;
+  scroll-margin-top: 170px;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(2px);
+}
+
+/* Projects Title Section */
+#projects {
+  background: rgba(233, 245, 255, 0.09);
+  padding: 50px 20px;
+  text-align: center;
+  font-size: x-large;
+}
+
+/* Flex container for project cards */
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  align-items: flex-start;
+}
+
+/* Individual project card */
+.project-card {
+  flex: 1 1 30%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+/* Project image */
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title under image */
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #14d1b2;
+}
+
+/* Brief description */
+.project-card p {
+  font-size: 1rem;
+  color: rgba(0,0,0,0.8);
+}
+
+/* Extra text section below each card */
+.project-extra {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: rgba(0,0,0,0.7);
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .project-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
+}

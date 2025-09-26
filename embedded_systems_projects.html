@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sharon's Portfolio 2025 | Embedded Systems Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="embedded.css">
+</head>
+
+<body>
+  <!-- main section -->
+  <div class="main">
+
+    <!-- navigation bar -->
+    <div class="navbar">
+      <img src="pic/logo1.png" class="mcu">
+      <ul>
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#projects">PROJECTS</a></li>
+        <li><a href="index.html#documentation">DOCUMENTATION</a></li>
+        <li><a href="index.html#me">ME</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- page content -->
+    <div id="projects">
+      <h2>DESIGN AND TESTING OF A CAPACITIVE SENSOR CIRCUIT FOR FUEL ADULTERATION DETECTION (PoC)</h2>
+      <div class="project-container">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="pic/embedded01/whatimage.png" alt="Circuit diagram">
+          <p>Use of the Miller Effect—an analogue circuit technique—to electronically amplify a small capacitance of ~20pF into a larger, more easily measurable effective capacitance (~1nF).</p>
+          <p>The Goal of this PoC: To validate that a Miller effect circuit could successfully amplify a small capacitance, proving the core concept for a future miniaturized, portable sensor.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="pic/embedded01/howimage.png" alt="How Stage">
+          <p>Following a deep dive into various component datasheets and theory, the above setup was achieved with the need to design a stable, high-gain, high-impedance system. I excited the circuit with a 1MHz square wave and used an oscilloscope to probe critical nodes: the op-amp output, the virtual ground, and the final buffered output, measuring the RC time constant to calculate the effective capacitance.</p>
+            <p>The challenge was balancing the op-amp's stability, gain, and the extreme sensitivity to parasitic capacitances / elements.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="pic/embedded01/resultimage.png" alt="Results">
+          <p>The core principle of the Miller Effect—that a feedback capacitor appears multiplied by the op-amp's gain—was validated in its ability to profoundly influence the circuit's behavior. The circuit did not behave neutrally; it reacted strongly, proving the effect's presence.</p>
+          <p>However, the results conclusively showed that in a high-impedance, high-frequency configuration, the theoretical amplification is easily dominated by parasitic capacitance and op-amp instability.</p>
+          <p>In essence, this project successfully de-risked the development path. It proved that the challenge is no longer a question of circuit theory, but one of precision implementation</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>© 2025 Sharon Njuguna. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
